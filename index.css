@@ -145,7 +145,7 @@ span{
 }
 #skip{
     position: absolute;
-    top: 250px;
+    top: 200px;
     right: 0px;
     z-index: 15;
     background-color: purple;
