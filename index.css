@@ -160,7 +160,7 @@ span{
 .tagline{
     display: flex;
     font-weight: 600;
-    color: #5c096d;
+    color: purple;
     font-family: 'Mulish', sans-serif;
     position: absolute;
     top: 108px;
