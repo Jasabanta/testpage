@@ -1,0 +1,209 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-image: linear-gradient(#B8FFF9, #EFFFFD);
+    touch-action: none;
+}
+audio{
+    position: absolute;
+    z-index: 15;
+}
+
+span{
+    margin: 5px;
+}
+#t1, #t2, #t3{
+    margin: 8px;
+    visibility: hidden;
+}
+
+#t1{
+    animation-delay: 4s;
+    animation-duration: 1s;
+}
+#t2{
+    animation-delay: 4.5s;
+    animation-duration: 1s;
+}
+#t3{
+    animation-delay: 5s;
+    animation-duration: 1s;
+}
+#bird{
+    position: absolute;
+    height: 50px;
+    top: 150px;
+    left: 0%;
+    animation-name: bird;
+    animation-duration: 8s;
+}
+@keyframes bird{
+    100%{
+        transform: translateX(1400px);
+    }
+}
+#handy1, #handy2, #handy3, #handy4, #handy5{
+    display: none;
+}
+
+.handyman {
+    position: absolute;
+    height: 170px;
+    top: 255px;
+    animation-duration: 0.5s;
+}
+
+.ha1{
+    right: 600px;
+    z-index: 10;
+}
+.ha2{
+    right: 545px;
+    z-index: 9;
+}
+.ha3{
+    left: 580px;
+    z-index: 10;
+}
+.ha4{
+    left: 528px;
+    z-index: 9;
+}
+.ha5{
+    right: 527px;
+    z-index: 8;
+}
+
+#head1, #head2, #head3{
+    visibility: hidden;
+}
+#head1{
+    animation-delay: 2.4s;
+}
+#head2{
+    animation-delay: 4.4s;
+}
+#head3{
+    animation-delay: 6.4s;
+}
+.cloud{
+    opacity: 1;
+    height: 300px;
+    width: 1200%;
+    display: block;
+    background-image: url(cloud3.png);
+    background-size: contain;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: cloud 150s linear infinite;
+}
+@keyframes cloud{
+
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+.num1{
+    display: flex;
+}
+.logo img{
+    width: 150px;
+}
+.logo{
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    animation-duration: 2s;
+}
+#phone{
+    position: relative;
+    bottom: -100px;
+    width: 350px;
+    height: 40px;
+    border: solid 1px #5c096d;
+    background-image: url(https://icons.iconarchive.com/icons/wikipedia/flags/1024/IN-India-Flag-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 50px;
+    margin-right: 10px;
+    z-index: 12;
+}
+#skip{
+    position: absolute;
+    top: 550px;
+    right: 22px;
+    z-index: 15;
+    background-color: purple;
+}
+.content{
+    text-align: center;
+}
+#btnotp{
+    position: relative;
+    top: 130px;
+}
+.tagline{
+    display: flex;
+    font-weight: 600;
+    color: #5c096d;
+    font-family: 'Mulish', sans-serif;
+    position: absolute;
+    top: 108px;
+    z-index: 12;
+}
+.city{
+    height: 150px;
+    width: 1200%;
+    display: block;
+    background-image: url(city.png);
+    background-size: contain;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 40s linear infinite;
+}
+@keyframes city{
+
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+@media only screen and (max-width: 360px) {
+   #phone{
+    width: 288px;
+   }
+   .handyman {
+     top: 250px;
+    }
+
+   .ha1{
+    right: 110px;
+    }
+    .ha2{
+    right: 80px;
+    }
+    .ha3{
+    left: 75px;
+    }
+    .ha4{
+    left: 40px;
+    }
+    .ha5{
+    right: 55px;
+    }
+   
+  }
+  
