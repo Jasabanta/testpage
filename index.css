@@ -162,6 +162,7 @@ span{
     position: relative;
     top: 130px;
     background: purple;
+    z-index:5;
 }
 .tagline{
     display: flex;
